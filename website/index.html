@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>*Criando um Container de uma Aplicação WEB.md</title><style></style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="Criando_um_Container_de_uma_Aplicao_WEB_0"></a><strong>Criando um Container de uma Aplicação WEB</strong></h1>
+<h2 class="code-line" data-line-start=1 data-line-end=2><a id="Meu_primeiro_projeto_Docker_1"></a>Meu primeiro projeto Docker!</h2>
+<hr>
+<h3 class="code-line" data-line-start=5 data-line-end=6><a id="arquivo_YML_5"></a>arquivo YML</h3>
+<pre><code class="has-line-data" data-line-start="8" data-line-end="17">version: '3.9'
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-apache-app
+    ports:
+    - '8080:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdoc</code></pre>
+</body></html>
